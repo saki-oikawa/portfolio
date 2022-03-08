@@ -65,24 +65,20 @@ width: auto; */
 }
 
 /*ココから！！*/
+/* * {
+    margin: 0;
+    padding: 0;
+} */
 
 body {
     font-family: serif;
+    margin: 0;
 }
 
 h2 {
-    font-size: 2.5rem;
-    padding: 24px 0;
-}
-
-a {
-    text-decoration: none;
-    color: white;
+    font-size: 1.3rem;
+    padding: 8px 0;
     font-weight: bold;
-    display: inline-block;
-    transition: .3s;
-    -webkit-transform: scale(1);
-    transform: scale(1);
 }
 
 a:hover {
@@ -90,12 +86,16 @@ a:hover {
     transform: scale(1.1);
 }
 
+.btn-parts:hover {
+    transform: scale(1.1);
+}
 
 .btn-icon {
-    font-size: 2rem;
-    margin: 16px 0;
+    font-size: 1rem;
+    margin: 8px 0 16px 0;
     background-color: rgb(100, 0, 0);
     color: white;
+    font-family: serif;
 }
 
 .btn-parts {
@@ -105,13 +105,13 @@ a:hover {
 
 /*header*/
 .title {
-    /* display: flex; */
-    font-size: 2rem;
-    color: white;
+    /* font-size: 2rem;
+    color: white; */
     justify-content: space-around;
-    padding: 20px 150px 0 150px;
+    /* padding: 13px 150px 0 150px; */
     background-color: rgb(27, 27, 27);
-    height: 70px;
+    height: auto;
+    padding: 8px 0;
 }
 
 .main-img img {
@@ -120,33 +120,83 @@ a:hover {
 
 .info-detail {
     display: flex;
-    font-size: 2rem;
+    /* font-size: 1rem; */
     list-style: none;
     justify-content: space-around;
     text-decoration: none;
 }
 
-.info-detail a　{
-    padding: 10px;
+/* .info-detail li {
+    font-size: 1rem;
+} */
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    display: inline-block;
+    transition: .3s;
+    -webkit-transform: scale(1);
+    transform: scale(1);
 }
+/* .info-detail a {
+    padding: 10px 10px 10px 60px;
+    border-left: 1px dotted #b2b2b2;
+}
+
+.info-detail .contact {
+    border-right: 1px dotted #b2b2b2;
+    padding-right: 60px;
+} */
 
 /*高田屋について*/
 .main-title {
     background-color: rgb(232, 216, 185);
-    height: 500px;
+    height: auto;
+    padding: 16px;
 }
 
 .ttl h2 {
     text-align: center;
 }
 
-.main-title img {
-    width: 30%;
-    height: 44%;
-    position: absolute;
+table.content {
+    width: 65%;
+    margin: 0 auto;
+    border-collapse: separate;
+    border-spacing: 0px 0px;
+    font-size: x-small;
+    text-align: left;
+}
+    
+table.content th,
+table.content td {
+    padding: 4px;
 }
 
-.list {
+.table-row {
+    border-bottom: 0.1px solid black;
+}
+
+/* .img-sp  */
+/* .img-tab  */
+.img-pc {
+    display: none;
+}
+
+/* .list {
+    display: flex;
+    font-size: 1rem;
+    justify-content: space-between;
+    background-color: rgba(115, 62, 62, 0.5);
+    color: black;
+    padding: 3px 10px;
+    margin: 0 auto;
+    height: auto;
+} */
+
+/* .list-top {
     display: flex;
     font-size: 1.6rem;
     justify-content: space-between;
@@ -155,22 +205,7 @@ a:hover {
     padding: 6px 70px;
     margin: 0 0 0 300px;
     height: 18%;
-}
-
-.list-top {
-    display: flex;
-    font-size: 1.6rem;
-    justify-content: space-between;
-    background-color: rgba(115, 62, 62, 0.5);
-    color: black;
-    padding: 6px 70px;
-    margin: 0 0 0 300px;
-    height: 18%;
-}
-
-.map {
-    display: flex;
-}
+} */
 
 /*メニュー*/
 .menu {
@@ -187,12 +222,19 @@ a:hover {
 .menu-text {
     display: inline-block;
     vertical-align: middle;
-    padding-left: 40px;
+    padding-bottom: 24px;
 }
 
 h3 {
-    font-size: 2rem;
-    padding-bottom: 16px;
+    font-size: 1.5rem;
+    padding: 8px 0;
+    padding: 8px 0 4px 0;
+    border-bottom: dotted 1px white;
+}
+
+.text {
+    font-size: 1rem;
+    padding-top: 8px;
 }
 
 .price {
@@ -200,73 +242,77 @@ h3 {
 }
 
 .menu-price {
-    position: relative;
-    left: 358px;
+    text-align: center;
 }
 
 .menu img {
-    height: 250px;
-    padding: 15px;
+    max-width: 70%;
+    height: auto;
 }
 
 /*アクセス*/
 .access {
     background-color: rgb(232, 216, 185);
-    height: 400px;
+    height: auto;
 }
 
 .access-title h2 {
-    padding-left: 32%;
+    text-align: center;
 }
 
 .address p {
-    font-size: 1.7rem;
-    padding: 8px;
+    font-size: 1rem;
+    padding: 4px;
 }
 
 .guide {
-    display: flex;
+    /* display: flex; */
     text-align: center;
-    padding: 3% 0 0  22%;
+    /* padding: 96px 0 0 320px; */
 }
 
 .access-img img {
-    height: 300px;
-    width: 400px;
-    position: absolute;
+    height: 150px;
+    width: 300px;
+    /* margin-bottom: 8px; */
+    /* position: absolute;
     top: 2340px;
-    right: 320px;
+    right: 320px; */
 }
 
 /*ギャラリー*/
 .gallery {
-    background-color: rgb(98, 88, 60);
+    background-color: rgb(150, 123, 95);
     color: white;
     display: flex;
 }
 
-/* .gallery p {
+.gallery-text {
+    font-size: 1.3rem;
     text-align: center;
-} */
+    /* padding: 16px 0 0 60px; */
+}
 
 .gallery img {
     height: auto;
-    width: 40%;
+    width: 50%;
 }
 
-.content {
+/* .content {
     text-align: center;
     padding-left: 85px;
-}
+} */
 
 .content p {
-    font-size: 1.5rem;
-    padding: 30px 0;
+    font-size: 1rem;
+    text-align: center;
+    padding-bottom: 24px;
 }
 
 .content img {
     height: auto;
-    width: 100%;
+    width: 95%;
+    padding-left: 16px;
 }
 
 
@@ -278,13 +324,140 @@ footer {
 }
 
 footer p {
-    font-size: 1.5rem;
+    font-size: 1rem;
     padding-bottom: 8px;
 }
 
 .footer-comment {
     color: white;
     background-color: rgb(27, 27, 27);
-    height: 70px;
-    padding-top: 25px;
+    padding: 16px 0;
+}
+
+@media (min-width: 600px ) {
+    a {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+    
+    table.content {
+        font-size: 1.5rem;
+    }
+    
+    .img-tab {
+        display: none;
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
+
+    .text {
+        font-size: 1.5rem;
+    }
+
+    .btn-icon {
+        font-size: 1.5rem;
+    }
+
+    .gallery-text {
+        font-size: 2rem;
+        padding-top: 60px;
+    }
+}
+
+@media (min-width: 1025px ) {
+    a {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+        padding: 16px 0;
+    }
+
+    .main-title {
+        padding: 40px;
+    }
+    
+    table.content {
+        font-size: 2rem;
+        width: 40%;
+    }
+    
+    table.content th {
+        padding: 4px 24px 0 0;
+    }
+    
+    .img-pc {
+        display: inline-block;
+        width: 50%;
+        height: auto;
+        padding-right: 24px;
+    }
+    
+    .map {
+        display: flex;
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 2.5rem;
+        width: 405px;
+        border-bottom: none;
+    }
+
+    .text {
+        width: 405px;
+    }
+
+    .menu img {
+        margin: 16px;
+        width: 500px;
+    }
+
+    .btn-icon {
+        font-size: 1.7rem;
+    }
+
+    .address {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       margin: 24px;
+    }
+
+    .address p {
+        font-size: 2rem;
+    }
+
+    .location {
+        padding-left: 16px;
+    }
+
+    .access-img img {
+        height: auto;
+        width: 450px;
+    }
+
+    .gallery-text {
+        font-size: 2.5rem;
+        padding-top: 100px;
+    }
+
+    .content p {
+        font-size: 1.5rem;
+    }
+
+    .content img {
+        padding-left: 32px;
+    }
+
+    footer p {
+        font-size: 1.5rem;
+    }
+
 }

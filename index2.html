@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 
 <head>
     <meta charset="UTF-8">
@@ -16,10 +16,10 @@
         <div class="title">
             <ul class="info-detail">
                 <li><a href="#">トップページ</a></li>
-                <li><a href="#main-title">高田屋について</a></li>
+                <li><a href="#main-title">髙田屋について</a></li>
                 <li><a href="#menu">メニュー</a></li>
                 <li><a href="#access">アクセス</a></li>
-                <li><a href="#contact">お問い合わせ</a></li>
+                <li class="contact"><a href="#contact">お問い合わせ</a></li>
             </ul>
         </div>
         <div class="main-img">
@@ -30,48 +30,123 @@
     <main>
         <div id="main-title" class="main-title">
             <div class="ttl">
-                <h2>高田屋について</h2>
+                <h2>髙田屋について</h2>
             </div>
             <div class="map">
-                <div class="comment">
-                    <div class="list-top">
-                        <p>所在地</p>
-                        <p>北海道函館市美原１丁目５−１</p>
-                    </div>
-                    <div class="list">
-                        <p>営業時間</p>
-                        <p>月〜金</p>
-                        <div class="main-list">
-                            <p>11:00~15:00</p>
-                            <p>17:00~22:00(LO 21:30)</p>
-                        </div>
-                    </div>
-                    <div class="list">
-                        <p>土日祝</p>
-                        <p>11:00~22:00(LO 21:30)</p>
-                    </div>
-                    <div class="list">
-                        <p>定休日</p>
-                        <p>毎週木曜日</p>
-                    </div>
-                    <div class="list">
-                        <p>TEL</p>
-                        <p>080-1234-5678</p>
-                    </div>
-                    <div class="list">
-                        <p>席数</p>
-                        <p>カウンター6席、小上がり4席</p>
-                    </div>
-                    <div class="list">
-                        <p>駐車場</p>
-                        <p>有(4台)</p>
-                    </div>
-                </div>
-                <div class="shop-img">
-                    <img src="img2/shop.png" alt="">
-                </div>
+                <table class="content">
+                    <tbody>
+                        <tr class="table-row">
+                            <th class="arrow_box">所在地</th>
+                            <td>北海道函館市美原1丁目5-1</td>
+                        </tr>
+                        <tr class="table-row">
+                            <th class="arrow_box">営業時間月〜金</th>
+                            <td>
+                                11:00~15:00<br>
+                                17:00~22:00(LO 21:30)
+                            </td>
+                        </tr>
+                        <tr class="table-row">
+                            <th>土日祝</th>
+                            <td>11:00~22:00(LO 21:30)</td>
+                        </tr>
+                        <tr class="table-row">
+                            <th>定休日</th>
+                            <td>毎週木曜日</td>
+                        </tr>
+                        <tr class="table-row">
+                            <th>TEL</th>
+                            <td>080-1234-5678</td>
+                        </tr>
+                        <tr class="table-row">
+                            <th>席数</th>
+                            <td>カウンター6席、小上がり4席</td>
+                        </tr>
+                        <tr class="table-row">
+                            <th>駐車場</th>
+                            <td>有(4台)</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <img class="img-pc" src="img2/shop.png" alt="">
             </div>
         </div>
+
+
+
+        <!-- <div class="temp">
+            <h2 class="spring-title">源泉名・泉質・効能ほか</h2>
+            <table class="content">
+                <tbody>
+                    <tr class="table-row">
+                        <th class="arrow_box">所在地</th>
+                        <td>北海道函館市美原1丁目5-1</td>
+                    </tr>
+                    <tr class="table-row">
+                        <th class="arrow_box">営業時間月〜金</th>
+                        <td>11:00~15:00</td>
+                        <td>17:00~22:00(LO 21:30)</td>
+                    </tr>
+                    <tr class="table-row">
+                        <th>土日祝</th>
+                        <td>11:00~22:00(LO 21:30)</td>
+                    </tr>
+                    <tr class="table-row">
+                        <th>定休日</th>
+                        <td>毎週木曜日</td>
+                    </tr>
+                    <tr class="table-row">
+                        <th>TEL</th>
+                        <td>080-1234-5678</td>
+                    </tr>
+                    <tr class="table-row">
+                        <th>席数</th>
+                        <td>カウンター6席、小上がり4席</td>
+                    </tr>
+                    <tr class="table-row">
+                        <th>駐車場</th>
+                        <td>有(4台)</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="comment">
+                <div class="list">
+                    <p>所在地</p>
+                    <p>北海道函館市美原1丁目5-1</p>
+                </div>
+                <div class="list">
+                    <p>営業時間</p>
+                    <p>月〜金</p>
+                    <div class="main-list">
+                        <p>11:00~15:00</p>
+                        <p>17:00~22:00(LO 21:30)</p>
+                    </div>
+                </div>
+                <div class="list">
+                    <p>土日祝</p>
+                    <p>11:00~22:00(LO 21:30)</p>
+                </div>
+                <div class="list">
+                    <p>定休日</p>
+                    <p>毎週木曜日</p>
+                </div>
+                <div class="list">
+                    <p>TEL</p>
+                    <p>080-1234-5678</p>
+                </div>
+                <div class="list">
+                    <p>席数</p>
+                    <p>カウンター6席、小上がり4席</p>
+                </div>
+                <div class="list">
+                    <p>駐車場</p>
+                    <p>有(4台)</p>
+                </div>
+            </div> -->
+
+
+
 
         <div id="menu" class="menu">
             <div class="menu-title">
@@ -80,62 +155,69 @@
             <div class="price">
                 <img src="img2/food1.png" alt="">
                 <div class="menu-text">
-                    <h3>うま辛みそ特辛　980円</h3>
-                    店主イチオシ！素材の旨味を引き出した優しい味わい。<br>
-                    人気No.１の「辛みそ」をもっと辛くして欲しいと言う要望に応え<br>
-                    誕生した「うま辛みそ特辛」は、口に残らない辛味が特徴。<br>
+                    <h3>うま辛みそ特辛 980円</h3>
+                    <p class="text">
+                        店主イチオシ!素材の旨味を引き出した優しい味わい。<br>
+                        人気No.1の「辛みそ」をもっと辛くして欲しいと言う<br>
+                        要望に応え誕生した"特辛"は、口に残らない辛味が特徴。<br>
+                    </p>
                 </div>
             </div>
             <div class="menu-price">
                 <img src="img2/food2.png" alt="">
                 <div class="menu-text">
-                    <h3>とり五目チャーハン　630円</h3>
-                    高田屋ならではの石鍋で食べるチャーハン。<br>
-                    最後まで熱々でおこげも楽しめます！味は３種類！<br>
-                    ハーフサイズもご用意しているのでラーメンと一緒にどうぞ！<br>
+                    <h3>とり五目チャーハン 630円</h3>
+                    <p class="text">
+                        高田屋ならではの石鍋で食べるチャーハン<br>
+                        最後まで熱々でおこげも楽しめます。味は3種類。<br>
+                        (ハーフサイズもご用意しております)<br>
+                        ラーメンと一緒にどうぞ!!<br>
+                    </p>
                 </div>
             </div>
             <div class="price">
                 <img src="img2/food3.png" alt="">
                 <div class="menu-text">
-                    <h3>ギョーザ　350円</h3>
-                    シンプルな野菜餃子<br>
-                    ごまダレに付けて食べるのがオススメです！<br>
-                    味変でお酢を少し追加するともっとさっぱりと食べられます！！<br>
+                    <h3>ギョーザ 350円</h3>
+                    <p class="text">
+                        シンプルな野菜餃子<br>
+                        ごまダレに付けて食べるのがオススメです!<br>
+                        味変でお酢を追加するともっとさっぱりと食べられます!!<br>
+                    </p>
                 </div>
             </div>
             <div class="btn-parts">
-                <button type="button" class="btn btn-icon">▶︎メニュー一覧</button>
+                <button type="button" class="btn btn-icon">メニュー一覧</button>
             </div>
         </div>
 
         <div id="access" class="access">
             <div class="access-title">
-                <h2>アクセス</h2>
+                <h2 class="access-text">アクセス</h2>
             </div>
             <div class="guide">
                 <div class="address">
-                    <p>ラーメン高田屋</p>
-                    <p>〒041-0807 北海道函館市美原1丁目5-1</p>
-                    <p>TEL 080-1234-5678</p>
-                    <p>専用の駐車場は店舗正面にご用意しております。</p>
-                    <div class="btn-parts">
-                        <button type="button" class="btn btn-icon">▶︎Googleマップ</button>
+                    <div class="access-img">
+                        <img src="img2/map.png" alt="">
+                    </div>
+                    <div class="location">
+                        <p>ラーメン髙田屋</p>
+                        <p>〒041-0807 北海道函館市美原1丁目5-1</p>
+                        <p>TEL 080-1234-5678</p>
+                        <p>専用の駐車場は店舗正面にご用意しております。</p>
                     </div>
                 </div>
-                <div class="access-img">
-                    <img src="img2/map.png" alt="">
+                <div class="btn-parts">
+                    <button type="button" class="btn btn-icon">Googleマップ</button>
                 </div>
             </div>
         </div>
 
         <div class="gallery">
-            <!-- <div class="photo"> -->
             <img src="img2/gallery.png" alt="">
-            <!-- </div> -->
             <div class="content">
-                <h2>ギャラリー</h2>
-                <p>ラーメン高田屋の店舗や料理を写真でご紹介します</p>
+                <h2 class="gallery-text">ギャラリー</h2>
+                <p>店内やお食事をご紹介</p>
                 <img src="img2/photo.png" alt="">
             </div>
         </div>
@@ -146,7 +228,7 @@
         <p>店舗についてのお問い合わせやご予約など、お気軽にご連絡ください。</p>
         <p>TEL 080-1234-5678</p>
         <div class="btn-parts">
-            <button type="button" class="btn btn-icon">▶︎メールでのお問い合わせ</button>
+            <button type="button" class="btn btn-icon">メールでのお問い合わせ</button>
         </div>
         <p class="footer-comment">@2021 saki-oikawa</p>
     </footer>
