@@ -65,10 +65,6 @@ width: auto; */
 }
 
 /*ココから！！*/
-/* * {
-    margin: 0;
-    padding: 0;
-} */
 
 body {
     font-family: serif;
@@ -81,12 +77,8 @@ h2 {
     font-weight: bold;
 }
 
-a:hover {
+.contact:hover {
     -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-}
-
-.btn-parts:hover {
     transform: scale(1.1);
 }
 
@@ -105,10 +97,7 @@ a:hover {
 
 /*header*/
 .title {
-    /* font-size: 2rem;
-    color: white; */
     justify-content: space-around;
-    /* padding: 13px 150px 0 150px; */
     background-color: rgb(27, 27, 27);
     height: auto;
     padding: 8px 0;
@@ -120,15 +109,10 @@ a:hover {
 
 .info-detail {
     display: flex;
-    /* font-size: 1rem; */
     list-style: none;
     justify-content: space-around;
     text-decoration: none;
 }
-
-/* .info-detail li {
-    font-size: 1rem;
-} */
 
 a {
     text-decoration: none;
@@ -140,15 +124,6 @@ a {
     -webkit-transform: scale(1);
     transform: scale(1);
 }
-/* .info-detail a {
-    padding: 10px 10px 10px 60px;
-    border-left: 1px dotted #b2b2b2;
-}
-
-.info-detail .contact {
-    border-right: 1px dotted #b2b2b2;
-    padding-right: 60px;
-} */
 
 /*高田屋について*/
 .main-title {
@@ -179,37 +154,13 @@ table.content td {
     border-bottom: 0.1px solid black;
 }
 
-/* .img-sp  */
-/* .img-tab  */
 .img-pc {
     display: none;
 }
 
-/* .list {
-    display: flex;
-    font-size: 1rem;
-    justify-content: space-between;
-    background-color: rgba(115, 62, 62, 0.5);
-    color: black;
-    padding: 3px 10px;
-    margin: 0 auto;
-    height: auto;
-} */
-
-/* .list-top {
-    display: flex;
-    font-size: 1.6rem;
-    justify-content: space-between;
-    background-color: rgba(115, 62, 62, 0.5);
-    color: black;
-    padding: 6px 70px;
-    margin: 0 0 0 300px;
-    height: 18%;
-} */
-
 /*メニュー*/
 .menu {
-    background-image: url("/Users/oikawasaki/mydev/code/img2/menu.png");
+    background-image: url("img2/menu.png");
     height: auto;
     color: white;
 }
@@ -266,18 +217,12 @@ h3 {
 }
 
 .guide {
-    /* display: flex; */
     text-align: center;
-    /* padding: 96px 0 0 320px; */
 }
 
 .access-img img {
     height: 150px;
     width: 300px;
-    /* margin-bottom: 8px; */
-    /* position: absolute;
-    top: 2340px;
-    right: 320px; */
 }
 
 /*ギャラリー*/
@@ -290,18 +235,12 @@ h3 {
 .gallery-text {
     font-size: 1.3rem;
     text-align: center;
-    /* padding: 16px 0 0 60px; */
 }
 
 .gallery img {
     height: auto;
     width: 50%;
 }
-
-/* .content {
-    text-align: center;
-    padding-left: 85px;
-} */
 
 .content p {
     font-size: 1rem;
@@ -459,5 +398,4 @@ footer p {
     footer p {
         font-size: 1.5rem;
     }
-
 }
